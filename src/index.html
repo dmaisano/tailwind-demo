@@ -2,19 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tailwind Demo</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body class="bg-gray-300">
-    <div class="block md:flex">
-      <div class="bg-blue-700 py-24 px-8">
-        <h1 class="text-blue-500">TailwindCSS Demo</h1>
+    <div class="block md:flex items-stretch">
+      <div
+        class="bg-blue-800 py-24 px-8 md:flex-1 md:h-screen md:p-12 md:justify-center lg:p-16 xl:p-24 flex flex-col"
+      >
+        <h1
+          class=" text-blue-500 text-center md:text-left text-3xl xl:text-5xl font-bold"
+        >
+          TailwindCSS Demo
+        </h1>
+        <a
+          href="https://tailwindcss.com/"
+          target="_blank"
+          class="text-white underline text-center mt-3 sm:text-lg md:text-left  md:text-xl xl:text-3xl"
+        >
+          TailwindCSS
+        </a>
       </div>
-      <div class="">
-        <div class=""></div>
-        <p>Random Text</p>
+      <div
+        class="py-12 px-8 flex flex-1 flex-col justify-center md:h-screen rightcol"
+      >
+        <div
+          class="bg-white inline-flex items-center p-6 rounded-lg shadow-md md:-ml-12"
+        >
+          <div class="bg-blue-500 rounded-full w-12 h-12"></div>
+          <p class="ml-4 lg:text-xl">Random Text</p>
+        </div>
+        <div
+          class="bg-white inline-flex items-center p-6 rounded-lg shadow-md mt-8 md:ml-8"
+        >
+          <div class="bg-blue-500 rounded-full w-12 h-12"></div>
+          <p class="ml-4 lg:text-xl">Random Text</p>
+        </div>
       </div>
     </div>
   </body>
